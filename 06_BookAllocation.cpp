@@ -30,7 +30,7 @@ int bookAllocate(vector<int> &arr, int n , int m) {
 
     int st = 0, end = sum;
     int ans = -1;
-    while(st < end) {
+    while(st <= end) {
         int mid = st + (end-st)/2;
         if(isValid(arr, n, m, mid)) {
             ans = mid;
